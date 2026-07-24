@@ -1,0 +1,58 @@
+{
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "class_weight": "balanced",
+  "candidates": {
+    "logistic": {
+      "roc_auc_mean": 0.9684798155087286,
+      "roc_auc_std": 0.003597771100273323,
+      "pr_auc_mean": 0.9132851597819063,
+      "pr_auc_std": 0.010688585646752163,
+      "roc_auc_folds": [
+        0.9672499313331071,
+        0.9666480862133037,
+        0.9655413374695039,
+        0.9682960916420272,
+        0.9746636308857013
+      ],
+      "pr_auc_folds": [
+        0.9064518191697416,
+        0.908109012180858,
+        0.9061168135702776,
+        0.9142654606543145,
+        0.931482693334339
+      ]
+    },
+    "xgboost": {
+      "roc_auc_mean": 0.9568596208798228,
+      "roc_auc_std": 0.0052124352662731195,
+      "pr_auc_mean": 0.8797375241261088,
+      "pr_auc_std": 0.014533262020227755,
+      "roc_auc_folds": [
+        0.9563763268867238,
+        0.9584686475045642,
+        0.9495702260352545,
+        0.9558350702017998,
+        0.9640478337707716
+      ],
+      "pr_auc_folds": [
+        0.8730374247624382,
+        0.8844856746225437,
+        0.8592834007798564,
+        0.8835907521641758,
+        0.8982903683015303
+      ]
+    }
+  },
+  "selection": {
+    "winner": "xgboost",
+    "delta_roc_auc_xgb_minus_lr": -0.011620194628905844,
+    "noise_threshold": 0.01,
+    "overlapping_mean_pm_std": false,
+    "selection_rule": "stakeholder_xgboost",
+    "justification": "CV ROC-AUC: XGBoost 0.9569 \u00b1 0.0052 vs LogisticRegression 0.9685 \u00b1 0.0036 (\u0394=-0.0116, overlapping_mean\u00b1std=False). Primary model set to XGBoost by stakeholder choice; LR kept as interpretable reference."
+  }
+}

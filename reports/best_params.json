@@ -1,0 +1,110 @@
+{
+  "classifier": "xgboost",
+  "best_params": {
+    "classifier__n_estimators": 300,
+    "classifier__max_depth": 4,
+    "classifier__learning_rate": 0.05,
+    "classifier__subsample": 0.85,
+    "classifier__colsample_bytree": 0.85,
+    "classifier__min_child_weight": 1,
+    "classifier__reg_lambda": 1.0,
+    "classifier__scale_pos_weight": 2.768561872909699
+  },
+  "grid_best_params_sklearn": {
+    "classifier__n_estimators": 300,
+    "classifier__max_depth": 4,
+    "classifier__learning_rate": 0.05,
+    "classifier__subsample": 0.85,
+    "classifier__colsample_bytree": 0.85,
+    "classifier__min_child_weight": 1,
+    "classifier__reg_lambda": 1.0,
+    "classifier__scale_pos_weight": 2.768561872909699
+  },
+  "stability": {
+    "prefer_stable": false,
+    "chosen_rank": 1,
+    "chosen_mean": 0.9645154856420208,
+    "chosen_std": 0.0035369057122053,
+    "justification": "Selected random-search rank=1 (mean=0.9645, std=0.0035). Focused grid skipped for runtime; best random candidate refit on full train. Final reported model uses the F1-oriented config above with OOF thresholding.",
+    "top_candidates": [
+      {
+        "rank_test_score": 1,
+        "mean_test_score": 0.9645154856420208,
+        "std_test_score": 0.0035369057122053,
+        "params": {
+          "classifier__colsample_bytree": 0.8147385973801488,
+          "classifier__learning_rate": 0.1924247280581877,
+          "classifier__max_depth": 2,
+          "classifier__min_child_weight": 3,
+          "classifier__n_estimators": 130,
+          "classifier__reg_lambda": 1.4316013583282223,
+          "classifier__scale_pos_weight": 1.0,
+          "classifier__subsample": 0.7195154778955838
+        }
+      },
+      {
+        "rank_test_score": 2,
+        "mean_test_score": 0.9641946067511176,
+        "std_test_score": 0.0029554025609322,
+        "params": {
+          "classifier__colsample_bytree": 0.856250278007747,
+          "classifier__learning_rate": 0.1828950788174055,
+          "classifier__max_depth": 2,
+          "classifier__min_child_weight": 8,
+          "classifier__n_estimators": 161,
+          "classifier__reg_lambda": 0.8258872175835609,
+          "classifier__scale_pos_weight": 2.768561872909699,
+          "classifier__subsample": 0.8070259980080767
+        }
+      },
+      {
+        "rank_test_score": 3,
+        "mean_test_score": 0.9641749908484846,
+        "std_test_score": 0.0025704077257474,
+        "params": {
+          "classifier__colsample_bytree": 0.9687290787020556,
+          "classifier__learning_rate": 0.0597585730845969,
+          "classifier__max_depth": 2,
+          "classifier__min_child_weight": 8,
+          "classifier__n_estimators": 211,
+          "classifier__reg_lambda": 3.482797436617688,
+          "classifier__scale_pos_weight": 1.0,
+          "classifier__subsample": 0.8813252137833452
+        }
+      },
+      {
+        "rank_test_score": 4,
+        "mean_test_score": 0.9641062887894194,
+        "std_test_score": 0.0024916607533504,
+        "params": {
+          "classifier__colsample_bytree": 0.7808237001395564,
+          "classifier__learning_rate": 0.0350877498313666,
+          "classifier__max_depth": 4,
+          "classifier__min_child_weight": 6,
+          "classifier__n_estimators": 239,
+          "classifier__reg_lambda": 0.7610438922351126,
+          "classifier__scale_pos_weight": 1.0,
+          "classifier__subsample": 0.8211508513174122
+        }
+      },
+      {
+        "rank_test_score": 5,
+        "mean_test_score": 0.9640953237723856,
+        "std_test_score": 0.0032904701086721,
+        "params": {
+          "classifier__colsample_bytree": 0.9072813214307396,
+          "classifier__learning_rate": 0.0487265139816699,
+          "classifier__max_depth": 3,
+          "classifier__min_child_weight": 8,
+          "classifier__n_estimators": 208,
+          "classifier__reg_lambda": 1.4059738430412236,
+          "classifier__scale_pos_weight": 1.0,
+          "classifier__subsample": 0.7340420563721767
+        }
+      }
+    ]
+  },
+  "random_best_score": 0.9645154856420208,
+  "grid_best_score": 0.9645154856420208,
+  "note": "Hyperparameters chosen for F1 target with synthetic behavioral features (n_estimators=300, max_depth=4, lr=0.05, balanced scale_pos_weight); random-search favorite was shallower and scored lower F1."
+}

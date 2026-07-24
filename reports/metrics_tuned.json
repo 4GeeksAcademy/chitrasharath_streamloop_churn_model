@@ -1,0 +1,41 @@
+{
+  "roc_auc": 0.976847761502493,
+  "pr_auc": 0.9358437953836038,
+  "f1": 0.8639798488664987,
+  "precision": 0.8166666666666667,
+  "recall": 0.9171122994652406,
+  "accuracy": 0.9233498935415189,
+  "threshold": 0.5196,
+  "confusion_matrix": {
+    "tn": 958,
+    "fp": 77,
+    "fn": 31,
+    "tp": 343,
+    "labels": [
+      "actual_0",
+      "actual_1"
+    ],
+    "matrix": [
+      [
+        958,
+        77
+      ],
+      [
+        31,
+        343
+      ]
+    ]
+  },
+  "model": "tuned",
+  "classifier": "xgboost",
+  "best_params": {
+    "classifier__n_estimators": 300,
+    "classifier__max_depth": 4,
+    "classifier__learning_rate": 0.05,
+    "classifier__subsample": 0.85,
+    "classifier__colsample_bytree": 0.85,
+    "classifier__min_child_weight": 1,
+    "classifier__reg_lambda": 1.0,
+    "classifier__scale_pos_weight": 2.768561872909699
+  }
+}

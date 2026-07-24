@@ -1,0 +1,34 @@
+{
+  "roc_auc": 0.9745485545997055,
+  "pr_auc": 0.9270664719221648,
+  "f1": 0.8621151271753681,
+  "precision": 0.8632707774798928,
+  "recall": 0.8609625668449198,
+  "accuracy": 0.9268985095812633,
+  "threshold": 0.5,
+  "confusion_matrix": {
+    "tn": 984,
+    "fp": 51,
+    "fn": 52,
+    "tp": 322,
+    "labels": [
+      "actual_0",
+      "actual_1"
+    ],
+    "matrix": [
+      [
+        984,
+        51
+      ],
+      [
+        52,
+        322
+      ]
+    ]
+  },
+  "model": "baseline_a",
+  "classifier": "xgboost",
+  "class_weight": null,
+  "scale_pos_weight": 1.0,
+  "model_path": "/workspaces/chitrasharath_streamloop_churn_model/models/baseline_a.joblib"
+}

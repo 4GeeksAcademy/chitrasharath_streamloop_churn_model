@@ -1,0 +1,7 @@
+{
+  "threshold": 0.5196,
+  "oof_f1": 0.8700925630386211,
+  "method": "maximize_f1_oof",
+  "n_splits": 5,
+  "random_state": 42
+}

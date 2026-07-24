@@ -1,0 +1,81 @@
+{
+  "scoring": "roc_auc",
+  "n_repeats": 3,
+  "top_features": [
+    {
+      "feature": "app_logins_30d",
+      "importance_mean": 0.06580708762635261,
+      "importance_std": 0.0009637583263016845
+    },
+    {
+      "feature": "nps_score",
+      "importance_mean": 0.017877754668907803,
+      "importance_std": 0.0012510134919347163
+    },
+    {
+      "feature": "avg_daily_usage_gb",
+      "importance_mean": 0.01336000014184476,
+      "importance_std": 0.0012375317288249924
+    },
+    {
+      "feature": "charges_per_tenure",
+      "importance_mean": 0.0062961327808481364,
+      "importance_std": 0.0005690829150293008
+    },
+    {
+      "feature": "support_ticket_escalations_90d",
+      "importance_mean": 0.0038829993776562377,
+      "importance_std": 0.0004732772626464468
+    },
+    {
+      "feature": "days_since_last_login",
+      "importance_mean": 0.003672005347546118,
+      "importance_std": 0.000367301502195466
+    },
+    {
+      "feature": "data_overage_events_90d",
+      "importance_mean": 0.0034822880263547518,
+      "importance_std": 0.0005589665405578955
+    },
+    {
+      "feature": "support_tickets_90d",
+      "importance_mean": 0.0019680955749764584,
+      "importance_std": 0.00018240978089761602
+    },
+    {
+      "feature": "payment_failures_12m",
+      "importance_mean": 0.001906038507296981,
+      "importance_std": 0.00020134957549883741
+    },
+    {
+      "feature": "plan_change_count_12m",
+      "importance_mean": 0.001675540827344853,
+      "importance_std": 0.00035557681947618876
+    },
+    {
+      "feature": "discount_offers_accepted_12m",
+      "importance_mean": 0.0014397239701629723,
+      "importance_std": 0.00043958279079389027
+    },
+    {
+      "feature": "MonthlyCharges",
+      "importance_mean": 0.0013776669024834949,
+      "importance_std": 0.00046689732736559565
+    },
+    {
+      "feature": "tenure",
+      "importance_mean": 0.0011631267542203672,
+      "importance_std": 0.0003338628339070193
+    },
+    {
+      "feature": "TotalCharges",
+      "importance_mean": 0.000833337765981009,
+      "importance_std": 0.0002005517145967345
+    },
+    {
+      "feature": "PaperlessBilling",
+      "importance_mean": 0.0007943304662968073,
+      "importance_std": 0.00024546464486627174
+    }
+  ]
+}

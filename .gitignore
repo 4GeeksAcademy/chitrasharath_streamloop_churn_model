@@ -1,0 +1,31 @@
+# Virtual envs
+.venv/
+venv/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Trained models (regenerate via scripts)
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

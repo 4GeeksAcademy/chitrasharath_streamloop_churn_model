@@ -1,0 +1,44 @@
+{
+  "setting": "ibm_only_no_synthetic",
+  "baseline_a": {
+    "roc_auc": 0.822993109119487,
+    "pr_auc": 0.616317020616576,
+    "f1": 0.5398230088495575,
+    "precision": 0.5980392156862745,
+    "recall": 0.49193548387096775
+  },
+  "baseline_b": {
+    "roc_auc": 0.819019402720961,
+    "pr_auc": 0.5982872270994398,
+    "f1": 0.5880923450789793,
+    "precision": 0.5365853658536586,
+    "recall": 0.6505376344086021
+  },
+  "logistic_balanced": {
+    "roc_auc": 0.8418987914936139,
+    "pr_auc": 0.6599115918079852,
+    "f1": 0.6059957173447538,
+    "precision": 0.50355871886121,
+    "recall": 0.760752688172043
+  },
+  "tuned": {
+    "roc_auc": 0.8429449145926365,
+    "pr_auc": 0.6630064715936956,
+    "f1": 0.6170212765957447,
+    "precision": 0.6105263157894737,
+    "recall": 0.6236559139784946,
+    "threshold": 0.402
+  },
+  "random_best_cv_auc": 0.8508904285675545,
+  "best_params": {
+    "classifier__colsample_bytree": 0.9687290787020557,
+    "classifier__learning_rate": 0.05975857308459693,
+    "classifier__max_depth": 2,
+    "classifier__min_child_weight": 8,
+    "classifier__n_estimators": 211,
+    "classifier__reg_lambda": 3.482797436617688,
+    "classifier__scale_pos_weight": 1.0,
+    "classifier__subsample": 0.8813252137833452
+  },
+  "test_pr_max_f1": 0.6256983240223465
+}
